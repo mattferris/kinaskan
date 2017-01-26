@@ -1,0 +1,49 @@
+/**
+ * controls.css
+ * Kinaskan UI Kit
+ * Copyright (c) 2016 Matt Ferris <matt@bueller.ca>
+ * Licensed under BSD 2-Clause (https://github.com/mattferris/kinaskan/LICENSE)
+ * https://github.com/mattferris/kinaskan
+ */
+
+/*
+ * Buttons
+ */
+.button,
+button,
+input[type="button"],
+input[type="submit"] {
+    background-color: inherit;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+    border: solid #ccc 1px;
+    border-radius: 3px;
+    color: #000;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.button.solid,
+button.solid,
+input[type="button"].solid,
+input[type="submit"].solid {
+    background-color: #00a5c8;
+    border-color: #888;
+    color: #fff;
+}
+
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0.075));
+}
+
+.button:active:focus,
+button:active:focus,
+input[type="button"]:active:focus,
+input[type="submit"]:active:focus {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.125));
+}

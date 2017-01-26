@@ -1,0 +1,12 @@
+/**
+ * typography.css
+ * Kinaskan UI Kit
+ * Copyright (c) 2016 Matt Ferris <matt@bueller.ca>
+ * Licensed under BSD 2-Clause (https://github.com/mattferris/kinaskan/LICENSE)
+ * https://github.com/mattferris/kinaskan
+ */
+
+body {
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-weight: 400;
+}

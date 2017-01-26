@@ -1,0 +1,19 @@
+/**
+ * theme.css
+ * Kinaskan UI Kit
+ * Copyright (c) 2016 Matt Ferris <matt@bueller.ca>
+ * Licensed under BSD 2-Clause (https://github.com/mattferris/kinaskan/LICENSE)
+ * https://github.com/mattferris/kinaskan
+ */
+
+/*
+ * Button background and text colour
+ */
+.button.solid,
+button.solid,
+input[type="button"].solid,
+input[type="submit"].solid {
+    background-color: #00a5c8;
+    border-color: #888;
+    color: #fff;
+}

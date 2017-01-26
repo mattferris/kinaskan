@@ -1,0 +1,20 @@
+/**
+ * layout.css
+ * Kinaskan CSS Toolkit
+ * Copyright (c) 2016 Matt Ferris <matt@bueller.ca>
+ * Licensed under BSD 2-Clause (https://github.com/mattferris/kinaskan/LICENSE)
+ * https://github.com/mattferris/kinaskan
+ */
+
+ul, p, h1, h2 {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+li:first-child {
+    margin-top: 0;
+}
