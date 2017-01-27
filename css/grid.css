@@ -6,6 +6,9 @@
  * https://github.com/mattferris/kinaskan
  */
 
+/*
+ * Grid
+ */
 .grid {
     margin: auto;
     padding: 0;
@@ -16,15 +19,42 @@
 .grid-960  { width: 960px; }
 .grid-1200 { width: 1200px; }
 
+/*
+ * Row
+ */
 .row {
     margin: 10px 0;
+    padding: 0 10px;
+    position: relative;
+}
+
+.grid.highlight .row {
+    background: #fcc;
+    border: solid #caa 1px;
+}
+
+.row::after {
+    clear: left;
+    content: '';
+    display: block;
+}
+
+.row.pull,
+.grid.pull .row {
+    margin: 0;
     padding: 0;
 }
 
-.row.pull        { margin: 0; }
-.row.pull-up     { margin-top: 0; }
-.row.pull-bottom { margin-bottom: 0; }
+.row.pull-top, .grid.pull-top .row               { margin-top: 0; }
+.row.pull-right, .grid.pull-right .row           { padding-right: 0; }
+.row.pull-bottom, .grid.pull-bottom .row         { margin-bottom: 0; }
+.row.pull-left, .grid.pull-left .row             { padding-left: 0; }
+.row.pull-vertical, .grid.pull-vertical .row     { margin: 0; }
+.row.pull-horizontal, .grid.pull-horizontal .row { padding: 0; }
 
+/*
+ * Column
+ */
 .col {
     box-sizing: border-box;
     float: left;
@@ -33,10 +63,9 @@
     position: relative;
 }
 
-.row::after {
-    clear: left;
-    content: '';
-    display: block;
+.grid.highlight .col {
+    background: #cfc;
+    border: solid #aca 1px;
 }
 
 .col.full           { width: 100%; }
@@ -52,6 +81,14 @@
 .col.sixth          { width: 16.666%; }
 .col.eighth         { width: 12.5%; }
 
-.col.pull       { padding: 0; }
-.col.pull-right { padding-right: 0; }
-.col.pull-left  { padding-left: 0; }
+.col.pull,
+.grid.pull .col,
+.grid.pull-horizontal .col,
+.row.pull .col,
+.row.pull-horizontal .col {
+    padding: 0;
+}
+
+.col.pull-right, .grid.pull-right .col, .row.pull-right .col { padding-right: 0; }
+.col.pull-left, .grid.pull-right .col, .row.pull-right .col  { padding-left: 0; }
+

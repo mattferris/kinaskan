@@ -8,12 +8,40 @@
   </head>
   <body>
     <header><h1>Kinaskan Style Tookit</h1></header>
+    <section id="grid" class="grid pull-vertical">
+      <div class="row">
+        <div class="col third">
+          <p>
+            Grid's default to the width of their containing element. Of course,
+            grid's can also have a defined width. Grids are defined using the
+            <code>grid</code> class on a block element.
+          </p>
+        </div>
+        <div class="col third">
+          <p>
+            Row's define vertical gutters, and are defined using the
+            <code>row</code> class.
+          </p>
+        </div>
+        <div class="col third">
+          <p>
+            Columns define horizontal gutters, are are defined using the
+            <code>col</code> class. Column widths are defined as a fraction of
+            the row width using fractional descriptors classes (i.e.
+            <code>full</code>, <code>half</code>, <code>quarter</code>, etc.).
+            So long as the combined width of all columns doesn't exceed the
+            total width of the row, all columns will occupy the same horizontal
+            line.
+          </p>
+        </div>
+      </div>
+    </section>
     <section id="buttons" class="grid">
       <ul class="row">
-        <li class="col quarter"><a href="#" class="button">Button</a></li>
-        <li class="col quarter"><button>Button</button></li>
-        <li class="col quarter"><input type="button" value="Button"></li>
-        <li class="col quarter"><input type="submit" value="Button"></li>
+        <li class="col quarter"><a href="#" class="button">Link Button</a></li>
+        <li class="col quarter"><button class="solid">Button Element (solid)</button></li>
+        <li class="col quarter"><input type="button" value="Input Button"></li>
+        <li class="col quarter"><input type="submit" class="solid" value="Submit Button (solid)"></li>
       </ul>
     </section>
   </body>

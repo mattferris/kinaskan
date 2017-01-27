@@ -9,4 +9,21 @@
 body {
     font-family: 'Open Sans', helvetica, arial, sans-serif;
     font-weight: 400;
+    line-height: 1.5em;
 }
+
+code, pre {
+    background: rgba(0, 0, 0, 0.075);
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.65);
+    font-family: consolas, 'courier new', monospace;
+    font-size: 0.825em;
+}
+
+code {
+    line-height: 1em;
+    padding: 2px 5px;
+    vertical-align: middle;
+}
+
+pre  { padding: 5px 10px; }
