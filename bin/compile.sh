@@ -2,7 +2,7 @@
 
 source='kinaskan.css'
 target='kinaskan.min.css'
-files='css/reset.css css/open-sans.css css/typography.css css/layout.css css/controls.css css/theme.css'
+files='css/reset.css css/open-sans.css css/typography.css css/grid.css css/layout.css css/controls.css css/theme.css'
 
 if [ ! -z "$2" ]; then
     suffix=$1

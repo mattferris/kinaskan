@@ -1,0 +1,57 @@
+/**
+ * grid.css
+ * Kinaskan UI Kit
+ * Copyright (c) 2016 Matt Ferris <matt@bueller.ca>
+ * Licensed under BSD 2-Clause (https://github.com/mattferris/kinaskan/LICENSE)
+ * https://github.com/mattferris/kinaskan
+ */
+
+.grid {
+    margin: auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.grid-960  { width: 960px; }
+.grid-1200 { width: 1200px; }
+
+.row {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.row.pull        { margin: 0; }
+.row.pull-up     { margin-top: 0; }
+.row.pull-bottom { margin-bottom: 0; }
+
+.col {
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    padding: 0 10px;
+    position: relative;
+}
+
+.row::after {
+    clear: left;
+    content: '';
+    display: block;
+}
+
+.col.full           { width: 100%; }
+.col.seven-eighths  { width: 87.5%; }
+.col.five-sixths    { width: 83.333% }
+.col.three-quarters { width: 75%; }
+.col.two-thirds     { width: 66.666%; }
+.col.five-eighths   { width: 62.5%; }
+.col.half           { width: 50%; }
+.col.three-eighths  { width: 37.5%; }
+.col.third          { width: 33.333%; }
+.col.quarter        { width: 25%; }
+.col.sixth          { width: 16.666%; }
+.col.eighth         { width: 12.5%; }
+
+.col.pull       { padding: 0; }
+.col.pull-right { padding-right: 0; }
+.col.pull-left  { padding-left: 0; }
